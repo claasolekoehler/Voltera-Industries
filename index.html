@@ -58,6 +58,10 @@ body {
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
     <header class="mb-16 text-center">
+        <div class="mb-8 flex justify-center">
+            <img src="Delve_Search_Logo.png" alt="Delve Search Logo" style="max-width: 300px; height: auto;" onerror="this.style.display='none'">
+        </div>
+        
         <div class="flex justify-center items-center gap-6 mb-6">
             <div class="text-4xl font-black tracking-widest text-forest uppercase">Voltera</div>
             <div class="text-2xl font-light text-mgrey">X</div>
@@ -100,10 +104,10 @@ body {
 
             <div class="stat-card border-t-8 border-sage bg-sage bg-opacity-10 text-center flex flex-col justify-center">
                 <div class="text-sm font-bold text-forest uppercase tracking-wider mb-2">The Delve Advantage</div>
-                <div class="text-5xl font-black text-forest mb-2">28 Days</div>
+                <div class="text-5xl font-black text-forest mb-2">42 Days</div>
                 <div class="text-md text-forest font-medium">Average Time to Hire</div>
                 <div class="mt-4 text-xs text-forest text-left p-3 bg-white rounded border border-sage">
-                    <strong>Data Backing:</strong> Delve's global network accelerates the process to an average of 4 weeks, saving roughly 57 days of lost productivity. Based on 539 high-tech hiring projects completed since 2017.
+                    <strong>Data Backing:</strong> Delve's global network accelerates the process to an average of 6 weeks, saving roughly 43 days of lost productivity. Based on 539 high-tech hiring projects completed since 2017.
                 </div>
             </div>
         </div>
@@ -123,19 +127,19 @@ body {
                     <h3 class="font-bold text-forest text-xl mb-3">The Math Behind the Margin</h3>
                     <p class="text-sm text-mgrey mb-3">At an assumed <strong>$150,000</strong> base salary, Delve's 25% fee equates to <strong>$37,500</strong>.</p>
                     <p class="text-sm text-mgrey">However, an internal search takes 85 days, accruing <strong>$106,250</strong> in vacancy costs ($1,250 x 85).</p>
-                    <p class="text-sm text-mgrey mt-3">Delve fills the role in an average of 28 days ($35,000 vacancy cost). Adding the fee ($37,500) equals a total expenditure of <strong>$72,500</strong>.</p>
+                    <p class="text-sm text-mgrey mt-3">Delve fills the role in an average of 42 days ($52,500 vacancy cost). Adding the fee ($37,500) equals a total expenditure of <strong>$90,000</strong>.</p>
                 </div>
                 <div class="flex items-center gap-4 p-5 border-l-4 border-forest bg-sage bg-opacity-20">
                     <div class="text-4xl font-black text-forest">&#x2B9D;</div>
                     <div>
                         <div class="font-bold text-forest text-lg">Immediate ROI</div>
-                        <div class="text-sm text-forest mt-1">Partnering with Delve results in a net savings of <strong>$33,750</strong> per hire compared to an internal search, while securing critical talent 57 days faster.</div>
+                        <div class="text-sm text-forest mt-1">Partnering with Delve results in a net savings of <strong>$16,250</strong> per hire compared to an internal search, while securing critical talent 43 days faster.</div>
                     </div>
                 </div>
             </div>
             <div class="lg:col-span-2">
                 <div class="chart-container-large">
-                    <canvas id="costComparisonChart" aria-label="Bar chart comparing internal search costs ($106,250) to Delve partnership costs ($72,500)"></canvas>
+                    <canvas id="costComparisonChart" aria-label="Bar chart comparing internal search costs ($106,250) to Delve partnership costs ($90,000)"></canvas>
                 </div>
             </div>
         </div>
@@ -143,35 +147,46 @@ body {
 
     <section class="mb-16">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold text-forest border-b-4 border-sage inline-block pb-2">3. Quality & Retention Performance</h2>
+            <h2 class="text-3xl font-bold text-forest border-b-4 border-sage inline-block pb-2">3. Operational Efficiency & Retention</h2>
             <p class="mt-4 text-lg text-mgrey">
                 <span class="block mt-2 font-bold text-forest bg-sage bg-opacity-20 inline-block px-3 py-1 rounded">Metrics backed by 539 hiring projects in 26 countries over the last 8 years.</span>
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
             <div class="stat-card">
                 <h3 class="text-xl font-bold text-forest mb-6 text-center">First-Year Retention Rate</h3>
                 <div class="chart-container">
                     <canvas id="retentionBarChart" aria-label="Bar chart showing Delve retention at 97.2% vs industry average of 82%"></canvas>
                 </div>
                 <p class="text-center text-xs text-mgrey mt-4 mb-2">
-                    <strong>Source:</strong> Industry average of 82% based on Gartner/SHRM retention metrics for competitive high-tech engineering markets.
+                    <strong>Source:</strong> Industry average of 82% based on Gartner/SHRM retention metrics.
                 </p>
-                <div class="p-3 bg-sage bg-opacity-10 border border-sage rounded text-sm text-forest text-center font-medium">
-                    This 15.2% advantage means that for roughly every 6 to 7 specialized engineers hired, Voltera avoids the complete operational disruption and sunk cost of replacing a critical team member in their first year.
+                <div class="p-3 bg-sage bg-opacity-10 border border-sage rounded text-sm text-forest text-center font-medium mt-auto">
+                    This 15.2% advantage avoids the complete operational disruption of replacing a critical team member in year one.
                 </div>
             </div>
 
             <div class="stat-card">
                 <h3 class="text-xl font-bold text-forest mb-6 text-center">Average Time-to-Hire (Days)</h3>
                 <div class="chart-container">
-                    <canvas id="timeToHireBar" aria-label="Bar chart showing Delve's average 28-day hiring time against the 85-day industry average"></canvas>
+                    <canvas id="timeToHireBar" aria-label="Bar chart showing Delve's average 42-day hiring time against the 85-day industry average"></canvas>
                 </div>
-                <p class="text-center text-xs text-mgrey mt-4">
-                    Delve's focused search methodology consistently delivers specialized engineering and sales professionals in an average of 28 days, with an upper limit margin extending to 42 days for highly niche profiles.
-                </p>
+                <div class="p-3 bg-white border border-sage rounded text-sm text-mgrey text-center font-medium mt-4">
+                    Delve consistently delivers specialized engineering and sales professionals in half the time of standard sourcing.
+                </div>
             </div>
+
+            <div class="stat-card border-t-8 border-forest text-center flex flex-col justify-center bg-gray-50">
+                <div class="text-sm font-bold text-mgrey uppercase tracking-wider mb-2">Hiring Manager Bandwidth</div>
+                <div class="text-5xl font-black text-forest mb-2">70+ Hours</div>
+                <div class="text-md text-forest font-bold">Saved Per Search</div>
+                <div class="mt-6 text-sm text-mgrey text-left p-4 bg-white rounded border border-sage shadow-sm">
+                    By heavily filtering and assessing candidates prior to introduction, Delve protects Voltera's leadership from the hidden cost of reviewing irrelevant resumes and conducting dead-end interviews, keeping engineering leaders focused on critical project milestones.
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -279,7 +294,7 @@ body {
     };
 
     // Cost Chart Data Update
-    const rawCostLabels = ['Standard Internal Search (85 Days)', 'Delve Partnership (28 Days)'];
+    const rawCostLabels = ['Standard Internal Search (85 Days)', 'Delve Partnership (42 Days)'];
     const wrappedCostLabels = rawCostLabels.map(wrapLabel);
 
     const costCtx = document.getElementById('costComparisonChart').getContext('2d');
@@ -290,7 +305,7 @@ body {
             datasets: [
                 {
                     label: 'Cost of Vacancy ($1,250/day)',
-                    data: [106250, 35000],
+                    data: [106250, 52500],
                     backgroundColor: '#808181',
                     borderRadius: { topLeft: 4, topRight: 4, bottomLeft: 4, bottomRight: 4 },
                     borderSkipped: false
@@ -399,7 +414,7 @@ body {
         }
     });
 
-    // Time to Hire Chart Update (Stacked to show margin error)
+    // Time to Hire Chart Update (Simplified back to standard horizontal bars)
     const rawTimeLabels = ['Industry Average Sourcing', 'Delve Fast-Track Network'];
     const wrappedTimeLabels = rawTimeLabels.map(wrapLabel);
 
@@ -410,15 +425,9 @@ body {
             labels: wrappedTimeLabels,
             datasets: [
                 {
-                    label: 'Base Days to Hire',
-                    data: [85, 28],
+                    label: 'Days to Hire',
+                    data: [85, 42],
                     backgroundColor: ['#808181', '#1c4d3b'],
-                    borderRadius: 4
-                },
-                {
-                    label: 'Upper Margin (up to 42 Days)',
-                    data: [0, 14], // Stacks on top of the 28 to reach 42
-                    backgroundColor: 'rgba(28, 77, 59, 0.3)', // Semi-transparent forest green
                     borderRadius: 4
                 }
             ]
@@ -429,30 +438,15 @@ body {
             indexAxis: 'y',
             scales: {
                 x: {
-                    stacked: true,
                     beginAtZero: true,
                     grid: { borderDash: [4, 4], color: '#afc5b8' }
                 },
                 y: {
-                    stacked: true,
                     grid: { display: false }
                 }
             },
             plugins: {
-                legend: { 
-                    display: true,
-                    position: 'bottom',
-                    labels: {
-                        generateLabels: function(chart) {
-                            return [{
-                                text: 'Upper Range Margin',
-                                fillStyle: 'rgba(28, 77, 59, 0.3)',
-                                strokeStyle: 'transparent',
-                                hidden: false
-                            }];
-                        }
-                    }
-                },
+                legend: { display: false },
                 ...standardTooltipConfig
             }
         }
